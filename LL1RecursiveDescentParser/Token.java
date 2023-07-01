@@ -1,4 +1,4 @@
-package LL1RecursiveDescentLexer;
+package LL1RecursiveDescentParser;
 
 public class Token{
 

@@ -1,4 +1,4 @@
-package LL1RecursiveDescentLexer;
+package LL1RecursiveDescentParser;
 
 public class ListLexer extends Lexer{
 
@@ -20,7 +20,7 @@ public class ListLexer extends Lexer{
                 case ' ': case '\t': case '\n': case '\r': WhiteSpace(); continue;
                 case ',' : consume(); return new Token(COMMA, ",");
                 case '[' : consume(); return new Token(LBRACKET, "[");
-                case ']' : consume(); return new Token(LBRACKET, "]");
+                case ']' : consume(); return new Token(RBRACKET, "]");
                 default:
                     if ( isLETTER() ) return NAME();
                     else if(isNumber())return NUMBER();
