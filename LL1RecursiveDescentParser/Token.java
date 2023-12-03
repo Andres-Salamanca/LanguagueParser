@@ -15,5 +15,6 @@ public class Token{
         return "<'"+text+"',"+tname+">";
 
     }
+    public Token(int type) { this.type = type; }
 
 }
